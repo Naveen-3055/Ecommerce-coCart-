@@ -18,7 +18,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:["https://ecommerce-cocart-frontend.onrender.com", "http://localhost:5174"],
+    origin:["https://ecommerce-cocart-frontend.onrender.com", "https://ecommerce-cocart-admin.onrender.com"],
     credentials:true
 }))
 
