@@ -22,6 +22,9 @@ app.use(cors({
     credentials:true
 }))
 
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully 🚀");
+});
 app.use("/api/auth",authRouter)
 app.use("/api/user",userRouter)
 app.use('/api/product',productRouter)
